@@ -39,7 +39,7 @@ class WP_Image_Editor_Gmagick extends WP_Image_Editor {
 		if ( ! extension_loaded( 'gmagick' ) || ! class_exists( 'Gmagick' ) )
 			return false;
 
-		if( is_callable( array( 'Gmagick', 'setCompressionQuality' ) ) )
+		if ( array_diff( array( 'setcompressionquality', 'getimage' ), get_class_methods( 'Gmagick' ) ) )
 			return false;
 
 		return true;
