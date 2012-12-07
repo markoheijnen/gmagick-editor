@@ -1,7 +1,7 @@
 <?php
 function image_editors_add_gmagick( $editors ) {
 	include 'editors/gmagick.php';
-	$editors[] = 'WP_Image_Editor_Gmagick';
+	array_unshift( $editors, 'WP_Image_Editor_Gmagick' );
 
 	return $editors;
 }
