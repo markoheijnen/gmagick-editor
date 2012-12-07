@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Gmagick
-Plugin URI: http://wordpress.org/extend/plugins/wp-image-editor-gmagick
+Plugin URI: http://wordpress.org/extend/plugins/gmagick
 Description: Enables Gmagick in WordPress
 Author: Marko Heijnen and Mike Schroder
 Version: 1.0
