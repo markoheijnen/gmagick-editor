@@ -24,5 +24,5 @@ If you want to know a little bit more about the changes you can look at:
 
 == Changelog ==
 
-= 0.1 (2012-4-2) =
+= 1.0 (2012-12-8) =
 * First version
