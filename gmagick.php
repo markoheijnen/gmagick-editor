@@ -4,7 +4,7 @@ Plugin Name: Gmagick
 Plugin URI: http://wordpress.org/extend/plugins/wp-image-editor-gmagick
 Description: Enables Gmagick in WordPress
 Author: Marko Heijnen and Mike Schroder
-Version: 0.1
+Version: 1.0
 Author URI: https://github.com/markoheijnen/gmagick-editor/
 */
 
