@@ -221,13 +221,11 @@ class WP_Image_Editor_Gmagick extends WP_Image_Editor {
 	public function multi_resize( $sizes ) {
 		$metadata = array();
 		$orig_size = $this->size;
-
-		$color = new GmagickPixel('none');
-		$orig_image = $this->image->newimage( $orig_size['width'], $orig_size['height'], 'none' );
+		$orig_image = $this->image->getimage();
 
 		foreach ( $sizes as $size => $size_data ) {
 			if ( ! $this->image )
-				$this->image = $orig_image->newimage( $orig_size['width'], $orig_size['height'], 'none' );
+				$this->image = $orig_image->getimage();
 
 			$resize_result = $this->resize( $size_data['width'], $size_data['height'], $size_data['crop'] );
 
