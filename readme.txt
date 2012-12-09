@@ -1,5 +1,5 @@
 === Gmagick ===
-Contributors: markoheijnen, dh-shredder
+Contributors: markoheijnen, DH-Shredder
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7ECGSYJLNB4T8
 Tags: image
 Requires at least: 3.5
@@ -24,5 +24,5 @@ If you want to know a little bit more about the changes you can look at:
 
 == Changelog ==
 
-= 1.0 (2012-12-8) =
+= 1.0 (2012-12-9) =
 * First version
