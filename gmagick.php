@@ -9,10 +9,11 @@ Author URI: https://github.com/markoheijnen/gmagick-editor/
 */
 
 function image_editors_add_gmagick( $editors ) {
-	if( ! class_exists('WP_Image_Editor_Gmagick') ) {
+	if( ! class_exists('WP_Image_Editor_Gmagick') )
 		include_once 'editors/gmagick.php';
+
+	if( ! in_array( 'WP_Image_Editor_Gmagick', $editors ) )
 		array_unshift( $editors, 'WP_Image_Editor_Gmagick' );
-	}
 
 	return $editors;
 }
