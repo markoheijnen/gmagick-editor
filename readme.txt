@@ -26,7 +26,6 @@ If you want to know a little bit more about the changes you can look at:
 
 = 1.1 (2012-12-30) =
 * Fix loading gmagick only once
-* Fix possible notice when using multi_resize()
 
 = 1.0 (2012-12-9) =
 * First version
