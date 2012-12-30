@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: image
 Requires at least: 3.5
 Tested up to: 3.5
-Stable tag: 1.0
+Stable tag: 1.1
 
 Enables Gmagick in WordPress
 
@@ -23,6 +23,10 @@ If you want to know a little bit more about the changes you can look at:
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
 == Changelog ==
+
+= 1.1 (2012-12-30) =
+* Fix loading gmagick only once
+* Fix possible notice when using multi_resize()
 
 = 1.0 (2012-12-9) =
 * First version
