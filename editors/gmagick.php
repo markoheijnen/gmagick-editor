@@ -119,7 +119,7 @@ class WP_Image_Editor_Gmagick extends WP_Image_Editor {
 	 * @return boolean|WP_Error
 	 */
 	public function set_quality( $quality = null ) {
-		if ( !$quality )
+		if ( ! $quality )
 			$quality = $this->quality;
 
 		try {
@@ -148,7 +148,8 @@ class WP_Image_Editor_Gmagick extends WP_Image_Editor {
 	 */
 	protected function update_size( $width = null, $height = null ) {
 		$size = null;
-		if ( !$width || !$height ) {
+
+		if ( ! $width || ! $height ) {
 			try {
 				$size = array(
 					'width' => $this->image->getimagewidth(),
@@ -290,6 +291,7 @@ class WP_Image_Editor_Gmagick extends WP_Image_Editor {
 		catch ( Exception $e ) {
 			return new WP_Error( 'image_crop_error', $e->getMessage() );
 		}
+
 		return $this->update_size();
 	}
 
@@ -313,6 +315,7 @@ class WP_Image_Editor_Gmagick extends WP_Image_Editor {
 		catch ( Exception $e ) {
 			return new WP_Error( 'image_rotate_error', $e->getMessage() );
 		}
+
 		return $this->update_size();
 	}
 
@@ -337,6 +340,7 @@ class WP_Image_Editor_Gmagick extends WP_Image_Editor {
 		catch ( Exception $e ) {
 			return new WP_Error( 'image_flip_error', $e->getMessage() );
 		}
+
 		return true;
 	}
 
