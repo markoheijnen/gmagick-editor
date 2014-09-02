@@ -24,6 +24,9 @@ If you want to know a little bit more about the changes you can look at:
 
 == Changelog ==
 
+= 1.3 (2014-09-03) =
+* Sync with WordPress 3.9 and 4.0
+
 = 1.2 (2012-12-30) =
 * Checking if we always dealing with Gmagick objects
 * Small bugfix after WordPress 3.8 when setting quality could end up not working
