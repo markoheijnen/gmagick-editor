@@ -103,10 +103,11 @@ class WP_Image_Editor_Gmagick extends WP_Image_Editor {
 		}
 
 		$updated_size = $this->update_size();
-		if ( is_wp_error( $updated_size ) )
-				return $updated_size;
+		if ( is_wp_error( $updated_size ) ) {
+			return $updated_size;
+		}
 
-		return $this->set_quality( $this->quality );
+		return true;
 	}
 
 	/**
@@ -125,7 +126,7 @@ class WP_Image_Editor_Gmagick extends WP_Image_Editor {
 			return $quality_result;
 		}
 		else {
-			$quality = $this->quality;
+			$quality = $this->get_quality();
 		}
 
 		try {
