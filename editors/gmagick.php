@@ -226,8 +226,24 @@ class WP_Image_Editor_Gmagick extends WP_Image_Editor {
 		$orig_image = $this->image->getimage();
 
 		foreach ( $sizes as $size => $size_data ) {
-			if ( ! $this->image )
+			if ( ! $this->image ) {
 				$this->image = $orig_image->getimage();
+			}
+
+			if ( ! isset( $size_data['width'] ) && ! isset( $size_data['height'] ) ) {
+				continue;
+			}
+
+			if ( ! isset( $size_data['width'] ) ) {
+				$size_data['width'] = null;
+			}
+			if ( ! isset( $size_data['height'] ) ) {
+				$size_data['height'] = null;
+			}
+
+			if ( ! isset( $size_data['crop'] ) ) {
+				$size_data['crop'] = false;
+			}
 
 			$resize_result = $this->resize( $size_data['width'], $size_data['height'], $size_data['crop'] );
 
