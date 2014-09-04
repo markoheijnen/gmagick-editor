@@ -1,5 +1,5 @@
 === Gmagick ===
-Contributors: markoheijnen, DH-Shredder
+Contributors: markoheijnen, DH-Shredder, CodeKitchen
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7ECGSYJLNB4T8
 Tags: image
 Requires at least: 3.5
