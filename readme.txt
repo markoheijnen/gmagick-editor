@@ -3,7 +3,7 @@ Contributors: markoheijnen, DH-Shredder, CodeKitchen
 Donate link: https://markoheijnen.com/donate
 Tags: image
 Requires at least: 3.5
-Tested up to: 4.0
+Tested up to: 4.3
 Stable tag: 1.3
 
 Enables Gmagick in WordPress
