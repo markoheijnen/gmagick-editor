@@ -1,11 +1,14 @@
 <?php
 /*
-Plugin Name: Gmagick
-Plugin URI: http://wordpress.org/extend/plugins/gmagick
-Description: Enables Gmagick in WordPress
-Author: Marko Heijnen and Mike Schroder
-Version: 1.3
-Author URI: https://github.com/markoheijnen/gmagick-editor/
+	Plugin Name: Gmagick
+	Description: Enables Gmagick in WordPress
+	Version:     1.3
+
+	Plugin URI:  http://wordpress.org/extend/plugins/gmagick
+
+	Author:      Marko Heijnen and Mike Schroder
+	Author URI:  https://github.com/markoheijnen/gmagick-editor/
+	Donate link: https://markoheijnen.com/donate
 */
 
 function image_editors_add_gmagick( $editors ) {
